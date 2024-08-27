@@ -47,7 +47,7 @@ header {
    padding: 48px 140px;
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   flex-wrap: wrap;
 }
 .header_nav {
    width: 60%;
@@ -396,6 +396,8 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   flex-wrap: wrap;
+
 }
 .book_text_container {
    width: 50%;
@@ -566,6 +568,7 @@ header {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 /* subscribe form wrapper */
@@ -650,6 +653,7 @@ footer {
    justify-content: center;
    position: relative;
    overflow: hidden;
+   flex-wrap: wrap;
 }
 .footer_logo_box {
    width: 20%;
@@ -746,6 +750,14 @@ footer {
    header {
       padding: 28px 70px;
    }
+   .decor_header {
+      position: absolute;
+      top: 0;
+      right: -10%;
+      z-index: -1;
+      overflow: hidden;
+      width: 75%;
+   }
    .bgc_decor {
       width: 300px;
       height: 300px;
@@ -757,11 +769,208 @@ footer {
       padding: 8px 12px;
       font-size: 16px;
    }
+   .header_title {
+      padding: 0 70px;
+   }
+   .title_container {
+      width: 50%;
+   }
+   .header_title .traveller_girl {
+      width: 50%;
+      height: 382px;
+   }
+   .title_container h2 {
+      font-size: 16px;
+      margin-bottom: 18px;
+   }
+   .title_container h1 {
+      color: #181E4B;
+      font-size: 42px;
+      line-height: 68px;
+      margin-bottom: 16px;
+   }
+   .title_container p {
+      margin-bottom: 26px;
+   }
+   .service_wrapper {
+      padding: 54px 70px 62px 70px;
+      background-position: calc(100% - 0px) 50px;
+   }
+   .service_wrapper h3 {
+      font-size: 14px;
+      margin-bottom: 8px;
+   }
+   .service_wrapper h2 {
+      font-size: 26px;
+      margin-bottom: 32px;
+   }
+   .service_cards_container {
+      flex-wrap: wrap;
+   }
+   .service_card {
+      width: 50%;
+      padding: 26px;
+   }
+   .destination_wrapper {
+      padding: 0 70px;
+      margin-bottom: 94px;
+   }
+   .destination_wrapper::after {
+      display: none;
+   }
+   .destination_wrapper h2 {
+      font-size: 26px;
+      margin-bottom: 32px;
+   }
+   .city_card_container {
+      gap: 56px;
+   }
+   .city_card_01 {
+      width: 45%;
+   }
+   .city_card_02 {
+      width: 45%;
+   }
+   .city_card_03 {
+      width: 45%;
+   }
+   .img_descr {
+      padding: 16px 18px 30px 16px;
+   }
+   .city_price p,
+   .city_price span {
+      font-size: 20px;
+      font-weight: bold;
+   }
+   .trip p {
+      font-size: 16px;
+   }
+   .easy_and_fast_wrapper {
+      padding: 0 70px;
+   }
+   .book_text_container {
+      width: 50%;
+      padding: 0 20px;
+   }
+   .book_text_container h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+   }
+   .book_text_container h2 {
+      font-size: 36px;
+      margin-bottom: 26px;
+   }
+   .items {
+      margin-bottom: 36px;
+   }
+   .items img {
+      margin-right: 18px;
+   }
+   .travel_greece_container {
+      padding: 38px 64px 38px 44px;
+   }
+   .ongoing_card {
+      width: 218px;
+      padding: 10px;
+   }
+   .ongoing_card img {
+      width: 40px;
+      margin-right: 10px;
+   }
+   .ongoing_box p:nth-child(1) {
+      font-size: 16px;
+      margin-bottom: 10px;
+   }
+   .ongoing_box p:nth-child(2) {
+      font-size: 12px;
+      margin-bottom: 8px;
+   }
+   .ongoing_box p span {
+      font-size: 12px;
+   }
+   .ongoing_box img {
+      width: 120px;
+   }
+   .brands_wrapper {
+      padding: 14px 70px;
+      margin-bottom: 26px;
+   }
+   .brands_wrapper ul {
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+   }
+   .subscribe_form_wrapper {
+      padding: 0 70px 36px 70px;
+   }
+   .form_decor {
+      padding: 60px 100px;
+   }
+   .form_decor p {
+      font-size: 26px;
+      line-height: 26px;
+      margin-bottom: 36px;
+   }
+   .form_decor .decor2 {
+      left: -10%;
+   }
+   .input_email {
+      width: 400px;
+      padding: 16px 0 16px 46px;
+      background-position: 16px center;
+      background-size: 16px 16px;
+      margin-right: 24px;
+      font-size: 16px;
+   }
+   .input_email::placeholder {
+      color: #39425D;
+      font-size: 16px;
+   }
+   .form_container .subscribe {
+      padding: 18px 36px;
+      font-size: 16px;
+   }
+   footer {
+      padding: 50px 70px 40px 70px;
+   }
+   .footer_logo_box h3 {
+      font-size: 40px;
+      margin-bottom: 14px;
+   }
+   .list_title_item {
+      margin-bottom: 26px;
+   }
+   .list_title_item ul {
+      margin-top: 20px;
+   }
+   .footer_nav_box {
+      padding: 0 60px;
+   }
+   .footer_nav_box ul li ul li a {
+      font-size: 16px;
+      margin-bottom: 14px;
+   }
+   .footer_media_box p {
+      font-size: 18px;
+      margin-bottom: 14px;
+   }
+   .footer_bgc_decor {
+      bottom: -50%;
+      right: -25%;
+      width: 300px;
+      height: 300px;
+   }  
 }
 
 @media screen and (max-width: 769px) {
    header {
       padding: 14px 36px;
+   }
+   .decor_header {
+      position: absolute;
+      top: 0;
+      right: -25%;
+      z-index: -1;
    }
    .bgc_decor {
       width: 150px;
@@ -774,10 +983,457 @@ footer {
       padding: 4px 8px;
       font-size: 12px;
    }
+   .header_title {
+      padding: 0 0 0 36px;
+   }
+   .title_container {
+      width: 50%;
+   }
+   .header_title .traveller_girl {
+      width: 50%;
+      height: 242px;
+   }
+   .title_container h2 {
+      font-size: 16px;
+      margin-bottom: 12px;
+   }
+   .title_container h1 {
+      color: #181E4B;
+      font-size: 22px;
+      line-height: 36px;
+      margin-bottom: 12px;
+   }
+   .title_container p {
+      margin-bottom: 18px;
+   }
+   .underline_with_image::after {
+      left: -30px;
+      bottom: 4px;
+      width: 142px;
+      height: 8px;
+   }
+   .plane_decor {
+      top: -26px;
+      right: 212px;
+   }
+   .plane2_decor {
+      display: none;
+   }
+   .find_out_bttn {
+      padding: 10px 14px;
+      font-size: 14px;
+      margin-right: 24px;
+   }
+   .play_demo_bttn {
+      width: 36px;
+      height: 36px;
+      margin-right: 14px;
+   }
+   .play_demo_bttn::after {
+      width: 12px;
+      height: 12px;
+   }  
+   .play span {
+      font-size: 14px;
+   }
+   .service_wrapper {
+      padding: 26px 36px 32px 36px;
+      background-position: calc(100% - 0px) 26px;
+   }
+   .service_wrapper h3 {
+      font-size: 14px;
+      margin-bottom: 8px;
+   }
+   .service_wrapper h2 {
+      font-size: 20px;
+      margin-bottom: 26px;
+   }
+   .service_card {
+      width: 50%;
+      padding: 16px;
+   }
+   .service_card img {
+     margin-bottom: 16px;
+   }
+   .service_card h4 {
+      font-size: 14px;
+      margin-bottom: 10px;
+   }
+   .service_card p {
+      font-size: 12px;
+   }
+   .service02 img {
+      margin-bottom: 12px;
+   }
+   .destination_wrapper {
+      padding: 0 70px;
+      margin-bottom: 94px;
+   }
+   .destination_wrapper::after {
+      display: none;
+   }
+   .destination_wrapper h2 {
+      font-size: 26px;
+      margin-bottom: 32px;
+   }
+   .city_card_container {
+      gap: 56px;
+   }
+   .city_card_01 {
+      width: 100%;
+   }
+   .city_card_02 {
+      width: 100%;
+   }
+   .city_card_03 {
+      width: 100%;
+   }
+   .img_descr {
+      padding: 10px 12px 24px 10px;
+   }
+   .city_price p,
+   .city_price span {
+      font-size: 28px;
+      font-weight: bold;
+   }
+   .trip p {
+      font-size: 20px;
+   }
+   .easy_and_fast_wrapper {
+      padding: 0 36px;
+   }
+   .book_text_container {
+      width: 100%;
+      text-align: center;
+   }
+   .book_text_container h2 {
+      font-size: 30px;
+   }
+   .items {
+      margin-bottom: 30px;
+   }
+   .items img {
+      margin-right: 16px;
+   }
+   .items_img_descr {
+      width: 100%;
+   }
+   .travel_greece_container {
+      width: 100%;
+      padding: 18px 32px 18px 22px;
+   }
+   .greece_card {
+      margin: 0 auto;
+   }
+   .brands_wrapper {
+      padding: 8px 36px;
+      margin-bottom: 26px;
+   }
+   .brands_wrapper ul {
+      gap: 16px;
+   }
+   .subscribe_form_wrapper {
+      padding: 0 36px 18px 36px;
+      background: none;
+   }
+   .form_decor {
+      padding: 60px 60px;
+   }
+   .form_decor p {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 30px;
+   }
+   .form_decor .decor1 {
+      display: none;
+   }
+   .form_decor .decor2 {
+      left: -10%;
+   }
+   .input_email {
+      width: 400px;
+      padding: 12px 0 12px 36px;
+      background-position: 16px center;
+      background-size: 12px 12px;
+      margin-right: 24px;
+      font-size: 12px;
+   }
+   .input_email::placeholder {
+      color: #39425D;
+      font-size: 12px;
+   }
+   .form_container .subscribe {
+      padding: 14px 30px;
+      font-size: 12px;
+   }
+   footer {
+      padding: 26px 36px 20px 36px;
+      gap: 16px;
+   }
+   .footer_logo_box {
+      width: 25%;
+   }
+   .footer_nav_box {
+      width: 70%;
+      padding: 0 16px;
+   }
+   .footer_logo_box h3 {
+      font-size: 32px;
+      margin-bottom: 12px;
+   }
+   .list_title_item {
+      margin-bottom: 20px;
+   }
+   .list_title_item ul {
+      margin-top: 16px;
+   }   
+}
+
+
+@media screen and (max-width: 426px) {
+   header {
+      padding: 10px 18px;
+   }
+   header img {
+      width: 38px;
+   }
+   .header_nav li a{
+     display: none;
+   }
+   .change_language_container {
+      display: none;
+   }
+   .bgc_decor {
+      width: 50px;
+      height: 50px;
+   }
+   .header_title {
+      padding: 0 0 0 18px;
+   }
+   .title_container {
+      width: 50%;
+   }
+   .header_title .traveller_girl {
+      width: 25%;
+      height: 128px;
+   }
+   .title_container h1 {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 8px;
+   }
+   .title_container p {
+      width: 300px;
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 10px;
+   }
+   .underline_with_image::after {
+      left: -10px;
+      bottom: 2px;
+      width: 76px;
+      height: 4px;
+   }
+   .plane_decor {
+      display: none;
+   }
+   .find_out_bttn {
+      padding: 6px 8px;
+      font-size: 10px;
+      margin-right: 20px;
+   }
+   .play_demo_bttn {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+   }
+   .play_demo_bttn::after {
+      width: 8px;
+      height: 8px;
+   }  
+   .play span {
+      font-size: 10px;
+   }
+   .service_wrapper {
+      padding: 16px 18px;
+      background: none;
+   }
+   .service_wrapper h3 {
+      font-size: 10px;
+   }
+   .service_wrapper h2 {
+      font-size: 16px;
+      margin-bottom: 20px;
+   }
+   .service_card {
+      width: 100%;
+      padding: 12px;
+   }
+   .service_card img {
+     margin-bottom: 12px;
+   }
+   .service_card h4 {
+      font-size: 12px;
+      margin-bottom: 8px;
+   }
+   .service_card p {
+      font-size: 10px;
+   }
+   .service02 img {
+      margin-bottom: 10px;
+   }
+   .destination_wrapper {
+      padding: 0 36px;
+      margin-bottom: 18px;
+   }
+   .destination_wrapper h2 {
+      font-size: 26px;
+      margin-bottom: 18px;
+   }
+   .city_card_container {
+      gap: 36px;
+   }
+   .city_price p,
+   .city_price span {
+      font-size: 18px;
+   }
+   .trip p {
+      font-size: 16px;
+   }
+   .easy_and_fast_wrapper {
+      padding: 0 18px;
+   }
+   .book_text_container {
+      width: 100%;
+      text-align: center;
+   }
+   .book_text_container h2 {
+      font-size: 20px;
+   }
+   .items {
+      margin-bottom: 20px;
+   }
+   .items img {
+      margin-right: 12px;
+   }
+   .greece_card {
+      width: 300px;
+      padding: 12px 16px;
+   }
+   .greece_card img {
+      margin-bottom: 16px;
+   }
+   .greece_card h3 {
+      font-size: 12px;
+      margin-bottom: 10px;
+   }
+   .greece_card p {
+      font-size: 12px;
+      margin-bottom: 16px;
+   }
+   .greece_card ul {
+      width: 120px;
+   }
+   .resume_box img {
+      width: 12px;
+   }
+   .resume p {
+      font-size: 12px;
+   }
+   .ongoing_card {
+      top: 160px;
+      left: 160px;
+      width: 180px;
+      padding: 8px;
+   }
+   .ongoing_card img {
+      width: 36px;
+      margin-right: 8px;
+   }
+   .ongoing_box h3 {
+      font-size: 12px;
+      margin-bottom: 6px;
+   }
+   .ongoing_box p:nth-child(1) {
+      font-size: 14px;
+      margin-bottom: 10px;
+   }
+   .ongoing_box p:nth-child(2) {
+      font-size: 12px;
+      margin-bottom: 8px;
+   }
+   .ongoing_box p span {
+      font-size: 12px;
+   }
+   .brands_wrapper {
+      padding: 8px 18px;
+      margin-bottom: 20px;
+   }
+   .brands_wrapper ul {
+      gap: 12px;
+   }
+   .subscribe_form_wrapper {
+      padding: 0 18px 10px 18px;
+   }
+   .form_decor {
+      padding: 30px 30px;
+      border-radius: 64px 12px 12px 12px;
+   }
+   .form_decor p {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 16px;
+   }
+   .form_decor .decor2 {
+      display: none;
+   }
+   .input_email {
+      width: 300px;
+      padding: 12px 0 12px 26px;
+      background-position: 16px center;
+      background-size: 8px 8px;
+      margin-right: 16px;
+   }
+   .input_email::placeholder {
+      font-size: 10px;
+   }
+   .form_container .subscribe {
+      padding: 10px 16px;
+      font-size: 10px;
+   }
+   footer {
+      padding: 18px 24px;
+      gap: 10px;
+   }
+   .footer_logo_box {
+      text-align: center;
+      width: 100%;
+   }
+   .footer_nav_box {
+      width: 100%;
+      padding: 0 16px;
+   }
+   .footer_logo_box h3 {
+      font-size: 26px;
+      margin-bottom: 10px;
+   }
+   .list_title_item {
+      margin-bottom: 16px;
+   }
+   .list_title_item ul {
+      margin-top: 10px;
+   }
+   .footer_media_box {
+      width: 100%;
+   }
+   .footer_media_box p {
+      font-size: 12px;
+      margin-bottom: 10px;
+   }
 }
  
-@media screen and (max-width: 425px) {
-   
-}
+
+ 
+
  
 
