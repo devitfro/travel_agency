@@ -399,7 +399,7 @@ header {
 }
 .book_text_container {
    width: 50%;
-   padding: 0 230px 0 40px;
+   padding: 0 100px 0 40px;
 }
 .book_text_container h3 {
    color: #5E6282;
@@ -443,7 +443,6 @@ header {
    width: 50%;
    padding: 78px 130px 76px 88px;
    position: relative;
-   /* margin: 0 auto; */
 }
 .greece_card {
    width: 380px;
@@ -743,4 +742,42 @@ footer {
    z-index: -1;
 }
 
+@media screen and (max-width: 1025px) {
+   header {
+      padding: 28px 70px;
+   }
+   .bgc_decor {
+      width: 300px;
+      height: 300px;
+   }
+   .header_nav li a {
+      margin-right: 20px;
+   }
+   .login_bttn, .sign_up_bttn, .language_bttn {
+      padding: 8px 12px;
+      font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 769px) {
+   header {
+      padding: 14px 36px;
+   }
+   .bgc_decor {
+      width: 150px;
+      height: 150px;
+   }
+   .header_nav li a {
+      margin-right: 16px;
+   }
+   .login_bttn, .sign_up_bttn, .language_bttn {
+      padding: 4px 8px;
+      font-size: 12px;
+   }
+}
+ 
+@media screen and (max-width: 425px) {
+   
+}
+ 
 
